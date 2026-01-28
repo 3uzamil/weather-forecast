@@ -16,6 +16,7 @@ body {
 .weatherContainer {
   background-color: #fff;
   padding: 15px 35px;
+  margin: 20px;
   border-radius: 10px;
   display: flex;
   justify-content: start;
@@ -25,6 +26,10 @@ body {
 }
 .weatherHeading {
   font-size: 18px;
+}
+#weatherForm {
+  display: flex;
+  gap: 5px;
 }
 #weatherInput {
   height: 25px;
@@ -82,4 +87,9 @@ body {
   text-transform: capitalize;
   font-weight: 550;
   color: rgba(0, 0, 0, 0.6);
+}
+#footerSpan{
+  font-size: 10px;
+  font-weight: 550;
+  color: rgba(0, 0, 0, 0.3);
 }
