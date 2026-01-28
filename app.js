@@ -3,24 +3,23 @@ let weatherForm = document.getElementById("weatherForm");
 // let searchButton = document.getElementById("searchButton");
 let response = document.getElementById("response");
 
-weatherForm.addEventListener("submit",(e)=>{
-    e.preventDefault();
-    if(weatherInput.value != ""){
-        weatherForecast(weatherInput.value.trim());
-    }
-    else{
-        alert("Please Enter a city");
-    }
-
+weatherForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  if (weatherInput.value != "") {
+    weatherForecast(weatherInput.value.trim());
+  } else {
+    alert("Please Enter a city");
+  }
 });
 
 weatherForecast("Sukkur");
 
-function weatherForecast(city){
-        let apiUrl = `http://api.weatherapi.com/v1/current.json?key=414bfed570924542aff45116262701&q=${city}`;
-        fetch(apiUrl).then((res)=>res.json())
-        .then((res)=>{
-            response.innerHTML=`
+function weatherForecast(city) {
+  let apiUrl = `http://api.weatherapi.com/v1/current.json?key=414bfed570924542aff45116262701&q=${city}`;
+  fetch(apiUrl)
+    .then((res) => res.json())
+    .then((res) => {
+      response.innerHTML = `
              <h2>${res.location.name}</h2>
             <span>${res.location.region},${res.location.country}</span>
             <span>Local Time: ${res.location.localtime}</span>
@@ -46,5 +45,5 @@ function weatherForecast(city){
            </div>
            </div>
             `;
-        });
+    });
 }
