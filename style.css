@@ -25,7 +25,8 @@ body {
   line-height: 1;
 }
 .weatherHeading {
-  font-size: 18px;
+  font-size: 23px;
+  line-height: 2.3;
 }
 #weatherForm {
   display: flex;
@@ -62,19 +63,20 @@ body {
   align-items: center;
   flex-direction: column;
 }
-#response span {
-  font-size: 10px;
+.headingTwo{
+  font-size: 20px;
+  font-weight: 500;
 }
 .cardContainer {
   margin: 10px 0;
   display: grid;
-  grid-template-columns: 120px 120px;
+  grid-template-columns: 140px 140px;
   row-gap: 10px;
 }
 .card {
-  height: 38px;
-  width: 90px;
-  padding: 5px 10px;
+  height: 45px;
+  width: 100px;
+  padding: 5px 15px;
   border-radius: 5px;
   background-color: rgba(0, 0, 0, 0.2);
   display: flex;

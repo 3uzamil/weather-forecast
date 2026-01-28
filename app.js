@@ -24,8 +24,8 @@ function weatherForecast(city) {
             <span>${res.location.region},${res.location.country}</span>
             <span>Local Time: ${res.location.localtime}</span>
             <img src="${res.current.condition.icon}" alt="icon" id="weatherIcon">
-            <h3>${res.current.temp_c}°C</h3>
-            <h4>${res.current.condition.text}</h4>
+            <span class="headingTwo">${res.current.temp_c}°C</span>
+            <span class="headingTwo">${res.current.condition.text}</span>
             <div class="cardContainer">
            <div class="card">
            <span>feels like</span>
