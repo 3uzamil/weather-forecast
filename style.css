@@ -27,7 +27,8 @@ body {
   font-size: 18px;
 }
 #weatherInput {
-  height: 20px;
+  height: 25px;
+  width: 200px;
   padding: 2px 5px;
   border-radius: 5px;
   text-transform: capitalize;
@@ -35,7 +36,7 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.5);
 }
 #searchButton {
-  height: 25px;
+  height: 30px;
   width: 70px;
   border-radius: 5px;
   background-color: dodgerblue;
