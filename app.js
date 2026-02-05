@@ -14,7 +14,7 @@ weatherForm.addEventListener("submit", (e) => {
 weatherForecast("Sukkur");
 
 function weatherForecast(city) {
-  let apiUrl = `https://api.codetabs.com/v1/proxy?quest=http://api.weatherapi.com/v1/current.json?key=414bfed570924542aff45116262701&q=${city}`;
+  let apiUrl = `https://api.weatherapi.com/v1/current.json?key=414bfed570924542aff45116262701&q=${city}`;
   fetch(apiUrl)
     .then((res) => res.json())
     .then((res) => {
