@@ -11,7 +11,7 @@ weatherForm.addEventListener("submit", (e) => {
   }
 });
 
-weatherForecast("Sukkur");
+// weatherForecast("Sukkur");
 
 function weatherForecast(city) {
   let apiUrl = `https://api.weatherapi.com/v1/current.json?key=414bfed570924542aff45116262701&q=${city}`;
