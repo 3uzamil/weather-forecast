@@ -44,5 +44,6 @@ function weatherForecast(city) {
            </div>
            </div>
             `;
+            weatherInput.value = "";
     });
 }
